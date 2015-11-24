@@ -7,3 +7,13 @@ deltaSocial.controller('facebookCtrl', function ($scope, $http){
 	
 	})
 })
+
+$(document).ready(function(){
+
+var id = $('#fbPosts');
+setInterval(function(){
+    var pos = id.scrollTop();
+    id.scrollTop(pos + 1);
+}, 100)
+
+});
